@@ -4,17 +4,28 @@
 public class ExampleVariables {
 
     public void sumValues(Integer oneValue, Integer otherValue){
-        //System.out.println();
+        Integer result = oneValue + otherValue;
+
+        System.out.println(result);
+
 
     }
 
     public void getLess(Integer oneValue, Integer otherValue){
-        //System.out.println();
+        Integer result2 = oneValue - otherValue;
+
+        System.out.println(result2);
 
     }
 
     public void getGreater(Integer oneValue, Integer otherValue){
-        //System.out.println();
+        Integer greater = null;
+        if (oneValue > otherValue){
+            greater =oneValue;
+        }else{
+            greater =otherValue;
+        }
+        System.out.println(greater);
 
     }
 
@@ -35,6 +46,8 @@ public class ExampleVariables {
 
 
     public static void main(String[] args) {
-        ExampleList examples = new ExampleList();
+
+        ExampleVariables astrid = new ExampleVariables();
+        astrid.sumValues(6,7);
     }
 }
